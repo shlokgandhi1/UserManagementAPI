@@ -1,8 +1,4 @@
-/*
-objective: You’ve been hired by TechHive Solutions to develop a User Management API for their internal tools. 
-The HR and IT departments need an API that allows them to create, update, retrieve, and delete user records efficiently. 
-Your task is to build the core functionality of the API, using Microsoft Copilot to scaffold, enhance, and test the code.
-*/
+
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -159,4 +155,5 @@ app.MapDelete("/users/{id}", (int id) =>
 app.Run();
 
 // User record definition
+
 record User(int Id, string Name, string Email);
